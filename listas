@@ -1,0 +1,53 @@
+#EJ1
+
+# EJ 1
+print("EJ 1")
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+
+print("Asignaturas de este curso:")
+for i in asignaturas:
+    print(i)
+
+# EJ 2
+print("\nEJ 2")
+
+for i in asignaturas:
+    print("Yo estudio " + i)
+
+# EJ 3
+print("\nEJ 3")
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"] * 3
+
+asignaturas_set = set(asignaturas)
+
+asignatura = input("Introduce una asignatura: ")
+
+if asignatura in asignaturas_set:
+    print("Sí, está en el set de asignaturas.")
+else:
+    print("No, no está en el set de asignaturas.")
+
+# E 5
+print("\nEJ 5")
+numeros = [1, 2, 3]
+cadenas = ["hola", "mundo"]
+
+numeros.append(9)
+cadenas.append("cruel")
+
+print(numeros)
+print(cadenas)
+
+# EJ 6
+print("\nEJ 6")
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+dif = a.difference(b) #muestra los que no coinciden
+
+print(dif)
+
+# EJ 7
+print("\nEJ 7")
+square = [i**2 for i in range(1,6)]
+print(square)

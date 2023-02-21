@@ -1,0 +1,37 @@
+# EJ 1
+print('EJ 1')
+edad = int(input('Introduce tu edad: '))
+if edad >= 18:
+    print('Eres mayor de edad.')
+else:
+    print('Eres menor de edad.')
+
+
+# EJ 2
+print('EJ 2')
+contraseña = 'contraseña'
+respuesta = input('Introduce la contraseña: ')
+
+if respuesta.lower() == contraseña.lower():
+    print('La contraseña es correcta')
+else:
+    print('La contraseña es incorrecta')
+
+# EJ 3
+print('EJ 3')
+num = int(input('Ingrese un número entero: '))
+if num % 2 == 0:
+    print('El número es par')
+else:
+    print('El número es impar')
+
+# EJ 4
+print('EJ 4')
+num1 = int(input('Introduzca un número: '))
+num2 = int(input('Introduzca otro número: '))
+
+if num2 != 0:
+    resultado = num1 / num2
+    print('El resultado de la división es:', resultado)
+else:
+    print('Error: No se puede dividir por cero.')

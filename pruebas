@@ -1,0 +1,41 @@
+# pruebas varias
+from sys import argv
+
+
+script, username = argv
+prompt = ">"
+
+print(f"Hola {username}, soy el script {script}")
+print(f"¿Te gusta este programa, {username}?")
+likes = input(prompt)
+
+print(f"Vale {username}, has dicho que {likes} te gustó")
+
+msg = "Hola mundo cruel"
+print(msg)
+
+x = [1,2,3,4,5,6,7,8,9]
+x[5:7] = [6.0, 6.5, 7]
+print (x)
+
+x = 1 #Esto es un comentario simple
+
+print(x)
+x = "foo"
+print(x)
+
+x = 5 +2 -3
+print(x)
+
+print(5//2) # con redondeo
+print(2**8) # elevado
+print(True)
+
+# %s "cadena" | %d 'entero' | %f numeros de punto flotante | %.<numero digitos>f 
+#print ("%s tiene %d años." % (nombre, edad))
+
+def func(**k): 
+   ans = k=['y']*k['z']-k['x']
+   return
+
+func(x=1, y=2, z=3)

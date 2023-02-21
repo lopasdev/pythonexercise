@@ -1,0 +1,33 @@
+#EJ1
+print('EJ 1')
+divisas = {'Euro':'€', 'Dollar':'$', 'Yen':'¥'}
+divisa = input('Introduzca una divisa: ')
+
+if divisa in divisas:
+    simbolo = divisas[divisa]
+    print(divisa + ' se simboliza con ' + simbolo)
+else:
+    print('La divisa introducida no está disponible en el diccionario.')
+
+#EJ 2
+print('EJ 2')
+user = {}
+user['nombre'] = input('Introduzca su nombre: ')
+user['edad'] = input('Introduzca su edad: ')
+user['direccion'] = input('Introduzca su dirección: ')
+user['telefono'] = input('Introduczca su número de teléfono: ')
+
+print(user['nombre'] + ' tiene ' + user['edad'] + ' años, vive en ' 
++ user['direccion'] + ' y su número de teléfono es el: ' + user['telefono']) 
+
+#EJ 3
+print('EJO 3')
+frutas = {'platano': 1.51, 'manzana': 2.92, 'tomate': 3.69}
+fruta = input('Introduzca una fruta: ')
+kg = float(input('Introduzca el número de kilos: '))
+
+if fruta in frutas:
+  precio = frutas[fruta] * kg
+  print(f'{kg} kilos de {fruta} costarían {precio} €')
+else:
+  print(f'{fruta} no está en el diccionario.')

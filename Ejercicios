@@ -1,0 +1,49 @@
+import sys, re
+#Ejercicios Tipos
+#Ej1
+print("EJ 1")
+nombre = "Samuel Muñoz"
+balance = 926953.44
+print (F"Hola {nombre}.Tu balance es {balance}$.")
+
+#Ej2
+print("EJ 2")
+print(sys.getsizeof(nombre))
+
+#Ej3
+print("EJ 3")
+x = "En un lugar de la Mancha, de cuyo nombre no quiero acordarme..."
+encontrarA = re.findall(r"a", x)
+cantidadA = len(encontrarA)
+print(cantidadA)
+
+#Ej4
+print("EJ 4")
+texto = " Mi gato está gordo"
+
+# strip quita el espacio al principio
+print("\nstrip:", texto.strip())
+
+# split los separa 
+palabras = texto.strip().split(" ")
+print("\nsplit:", palabras)
+
+# lower lo pone en minusculas
+print("\nlower:", texto.strip().lower())
+
+# upper lo pone en mayusculas
+print("\nupper:", texto.strip().upper())
+
+# find escuentra cuántas hay
+posicion = texto.strip().find("a")
+print("\nfind:", posicion)
+
+# index te dice en que index está la primera
+posicion = texto.strip().index("g")
+print("\nindex:", posicion)
+
+# startswith te dice si empieza por esa letra
+resultado = texto.strip().startswith("M")
+print("\nstartswith:", resultado)
+
+
